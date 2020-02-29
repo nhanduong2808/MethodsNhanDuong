@@ -21,6 +21,7 @@ namespace MethodsNhanDuong
             }
             else if (operation == "/")
             {
+                // if the second number is a 0, throw an exception with message then close the program
                 try
                 {
                     result = num1 / num2;
