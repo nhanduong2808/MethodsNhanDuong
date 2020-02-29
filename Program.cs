@@ -32,7 +32,7 @@ namespace MethodsNhanDuong
                     Environment.Exit(0);
                 }
             }
-            Console.WriteLine(num1.ToString() + " " + operation + " " + num2.ToString() + " = " + result.ToString());
+            Console.WriteLine("Here is our calculation: " + num1.ToString() + " " + operation + " " + num2.ToString() + " = " + result.ToString());
         }
 
         static void Main(string[] args)
@@ -80,16 +80,14 @@ namespace MethodsNhanDuong
             Console.Write("Now enter the first number please: ");
             while (!int.TryParse(Console.ReadLine(), out num1))
             {
-                Console.Clear();
-                Console.Write("Integer only please!");
+                Console.Write("First number should be integer only: ");
             }
 
             // Asking for second number
             Console.Write("Now enter the second number please: ");
             while (!int.TryParse(Console.ReadLine(), out num2))
             {
-                Console.Clear();
-                Console.Write("Integer only please!");
+                Console.Write("Second number should be integer only: ");
             }
 
             // Calling method to do the operation
